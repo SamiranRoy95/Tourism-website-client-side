@@ -5,7 +5,7 @@ const OurTeam = () => {
     const [team, setTeam] = useState([])
     useEffect(() => {
 
-        const url = "http://localhost:5000/team"
+        const url = "https://fathomless-forest-96543.herokuapp.com/team"
         fetch(url)
             .then(res => res.json())
             .then(data => {

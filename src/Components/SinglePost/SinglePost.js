@@ -14,7 +14,7 @@ const SinglePost = () => {
     
     const { singlepostid } = useParams()
     useEffect(() => {
-        fetch("http://localhost:5000/homeservice")
+        fetch("https://fathomless-forest-96543.herokuapp.com/homeservice")
             .then(res => res.json())
             .then(data => {
                

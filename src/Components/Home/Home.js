@@ -15,7 +15,7 @@ const Home = () => {
 
     useEffect(() => {
 
-        fetch("http://localhost:5000/homeservice")
+        fetch("https://fathomless-forest-96543.herokuapp.com/homeservice")
             .then(res => res.json())
             .then(data => {
                 setServices(data)
@@ -26,7 +26,7 @@ const Home = () => {
 
     useEffect(() => {
 
-        fetch("http://localhost:5000/addnewservice")
+        fetch("https://fathomless-forest-96543.herokuapp.com/addnewservice")
             .then(res => res.json())
             .then(data => {
                 console.log(data)

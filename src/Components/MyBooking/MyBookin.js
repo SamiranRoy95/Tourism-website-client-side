@@ -7,7 +7,7 @@ const MyBooking = () => {
     const [booking,setBooking]=useState([])
 
 useEffect(()=>{
-fetch("http://localhost:5000/myorders")
+fetch("https://fathomless-forest-96543.herokuapp.com/myorders")
 .then(res=>res.json())
 .then(data=>{
     setBooking(data)
@@ -17,7 +17,7 @@ fetch("http://localhost:5000/myorders")
 },[])
 
 const handleDeleteUser=id=>{
-    fetch(`http://localhost:5000/myorders/${id}`,{
+    fetch(`https://fathomless-forest-96543.herokuapp.com/myorders/${id}`,{
         method:"DELETE"
         
     })

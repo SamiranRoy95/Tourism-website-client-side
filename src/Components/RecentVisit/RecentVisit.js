@@ -7,7 +7,7 @@ const RecentVisit = () => {
     const [data,setData]=useState([])
 
     useEffect(()=>{
-const url="http://localhost:5000/recentvisit"
+const url="https://fathomless-forest-96543.herokuapp.com/recentvisit"
 fetch(url)
 .then(res=>res.json())
 .then(data=>{
