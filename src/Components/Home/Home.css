@@ -1,0 +1,54 @@
+
+.services{
+    /* display: flex;
+    flex-wrap: wrap; */
+    
+    padding:30px
+}
+    .services__wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 120px;
+
+    }
+
+    .single__item__add__home{
+
+
+        background-color: #d3d3d398;
+        width: 300px;
+        margin:10px;
+        padding:10px;
+        border:1px solid lightgray;
+        border-radius: 7px;
+        height: 430px;
+    
+    }
+
+   .single__item__add__home .singleadd__img{
+
+        width: 300px;
+    }
+    .single__item__add__home p{
+        margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 23px;
+    }
+    .our__service__title{
+        text-align: center;
+    }
+
+    .link__title{
+        text-decoration: none;
+        
+    }
+    .book__btn{
+       margin-top:5px;
+        width: 120px;
+        padding: 5px;
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+        margin-top:10px;
+        background-color: rgba(220, 20, 60, 0.445);
+    }

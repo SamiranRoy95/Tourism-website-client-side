@@ -1,0 +1,40 @@
+.recent__visit__wrapper{
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 120px;
+
+}
+
+.recent__visit__item{
+
+    background-color: #d3d3d398;
+    width: 300px;
+    margin:10px;
+    padding:10px;
+    border:1px solid lightgray;
+    border-radius: 7px;
+    height: 430px;
+}
+
+.recent__visit__item p{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 20px;
+}
+
+.recent__visit__item{
+    overflow: hidden;
+}
+.recent__visit__item .recent__visit__img{
+    width: 300px;
+    height: 220px;
+    transition: transform .2s;
+
+}
+.recent__visit__item img:hover{
+    transform: scale(1.1); 
+}
+.recent__tour__title{
+    text-align: center;
+}

@@ -1,0 +1,21 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: red; */
+    
+    
+}
+.header__logo{
+    text-decoration: none;
+    font-size: 20px;
+}
+.header__link{
+    text-decoration: none;
+    font-size: 18px;
+    padding:5px;
+}
+
+.header__logo__link{
+    text-decoration:none;
+}

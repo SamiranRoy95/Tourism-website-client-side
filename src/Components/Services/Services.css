@@ -1,0 +1,13 @@
+ .whole__services{
+     
+     display: flex;
+     flex-wrap: wrap;
+     padding-left: 155px;
+     padding-right: 100px;
+ }
+ .service__img{
+    width: 300px;
+}
+.service__title{
+    text-align: center;
+}

@@ -1,0 +1,43 @@
+.service__item{
+
+    background-color: #d3d3d398;
+    width: 300px;
+    margin:10px;
+    padding:10px;
+    border:1px solid lightgray;
+    border-radius: 7px;
+    height: 430px;
+
+
+    
+}
+.service__item p{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 23px;
+}
+
+.service__item{
+    overflow: hidden;
+}
+.service__item .service__img{
+    width: 300px;
+    height: 250px;
+    transition: transform .2s;
+}
+.service__item  img:hover{
+    transform: scale(1.1); 
+}
+.link__title{
+    text-decoration: none;
+}
+.book__btn{
+    margin-top:5px;
+        width: 120px;
+        padding: 5px;
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+        margin-top:10px;
+        background-color: rgba(220, 20, 60, 0.445);
+}

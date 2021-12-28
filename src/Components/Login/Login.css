@@ -1,0 +1,47 @@
+.login__form__div{
+    background-color: rgba(211, 211, 211, 0.274);
+     width: 400px;
+     margin:auto;
+     border-radius: 4px;
+     border:2px solid lightgray;
+     height: 340px;
+ }
+ form .login__label{
+     
+     font-size: 18px;
+ }
+ .login__input,.login__submit__btn{
+     padding: 5px;
+     margin: 5px;
+     width: 95%;
+     height: 20px;
+     border-radius: 3px;
+     border:1px solid lightgray;
+     display: inline-block;
+ }
+ .login__submit__btn{
+     height: 28px;
+     background-color: lime;
+ 
+ }
+ .login__title{
+     font-size: 27px;
+     text-align:center;
+ }
+ .google_sign__in{
+    text-align: center;
+    margin:auto;
+    
+    width: 400px;
+    padding: 8px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    font-size: 16px;
+
+ }
+ .google__sign__in__div{
+text-align: center;
+margin-top:50px;
+
+
+ }
