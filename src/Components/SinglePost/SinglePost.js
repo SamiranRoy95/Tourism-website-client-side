@@ -38,7 +38,7 @@ const SinglePost = () => {
         const opinion=opinionRef.current.value;
         const newBooking={name,addres,phone,opinion}
 
-        fetch("http://localhost:5000/myorders",{
+        fetch("https://fathomless-forest-96543.herokuapp.com/myorders",{
             method:"POST",
             headers:{
                 "content-type":"application/json"
