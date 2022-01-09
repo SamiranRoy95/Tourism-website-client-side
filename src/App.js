@@ -20,6 +20,7 @@ import Services from "./Components/Services/Services";
 import SinglePost from "./Components/SinglePost/SinglePost";
 import PrivateRoute from "./Components/PrivateRoute/PrivateRoute"
 import NotFound from "./Components/NotFound/NotFound";
+import Booking from "./Components/Booking/Booking";
 
 function App() {
   return (
@@ -47,6 +48,10 @@ function App() {
           <Route path="/contact">
 <Contact/>
           </Route>
+          <Route to="/booking">
+          <Booking/>
+          </Route>
+          
           <Route path="/mybooking">
             <MyBooking/>
           </Route>

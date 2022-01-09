@@ -22,7 +22,10 @@ const Header = () => {
             Services
             </Link>
             <Link  className='header__link' to="/mybooking">
-            Mybooking
+            All Booking
+            </Link>
+            <Link to="/booking">
+            My Booking
             </Link>
             <Link  className='header__link' to="/addservice">
             Add Service
