@@ -35,41 +35,41 @@ function App() {
           <Route path="/home">
             <Home />
           </Route>
-          <PrivateRoute  path="/singlepost/:singlepostid">
-          <SinglePost/>
+          <PrivateRoute path="/singlepost/:singlepostid">
+            <SinglePost />
           </PrivateRoute>
           <Route path="/singlepost/:singlepostid">
-            <SinglePost/>
+            <SinglePost />
           </Route>
           <Route path="/services">
             <Services />
           </Route>
-          
+
           <Route path="/contact">
-<Contact/>
+            <Contact />
           </Route>
           <Route path="/booking">
-          <Booking/>
+            <Booking />
           </Route>
-          
-          <Route path="/mybooking">
-            <MyBooking/>
+
+          <Route path="/allbooking">
+            <MyBooking />
           </Route>
           <Route path="/addservice">
-            <NewServiceAdd/>
+            <NewServiceAdd />
           </Route>
           {/* <PrivateRoute>
 
           </PrivateRoute> */}
-         
+
           <Route path="/post/:id">
-            <Details/>
+            <Details />
           </Route>
           <Route path="/login">
-            <Login/>
+            <Login />
           </Route>
-          <Route  path="*" >
-            <NotFound/>
+          <Route path="*" >
+            <NotFound />
 
           </Route>
         </Switch>

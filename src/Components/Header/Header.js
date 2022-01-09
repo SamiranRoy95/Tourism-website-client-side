@@ -21,10 +21,10 @@ const Header = () => {
             <Link className='header__link' to="/services">
             Services
             </Link>
-            <Link  className='header__link' to="/mybooking">
+            <Link  className='header__link' to="/allbooking">
             All Booking
             </Link>
-            <Link to="/booking">
+            <Link className='header__link' to="/booking">
             My Booking
             </Link>
             <Link  className='header__link' to="/addservice">
