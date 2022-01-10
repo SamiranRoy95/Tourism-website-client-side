@@ -2,7 +2,7 @@ import React ,{useState,useEffect}from 'react'
 import UseContext from '../ReactContext/UseContext'
 
 const Booking = () => {
-const [booking,setBooking]=useState([])
+const [orders,setOrders]=useState([])
 const {user}=UseContext();
 
 useEffect(()=>{
@@ -11,7 +11,7 @@ useEffect(()=>{
     .then(data=>{
         console.log(data)
        
-        setBooking(data)
+        setOrders(data)
     })
     
     
@@ -25,8 +25,8 @@ useEffect(()=>{
         .then(data=>{
         if(data.deletedCount>0){
             alert("succesfully delete")
-            const remainingBooking=booking.filter(b=>b._id!==id)
-            setBooking(remainingBooking)
+            const remainingBooking=orders.filter(b=>b._id!==id)
+            setOrders(remainingBooking)
         }
     
         })
@@ -40,7 +40,7 @@ useEffect(()=>{
             <div>{user.email}</div>
             <div className='my__booking'>
             {
-                booking.map(b=><div className='single__booking'>
+                orders.map(b=><div className='single__booking'>
                    <h3>Name:{b.name}</h3>
                    <h3>Addres:{b.addres}</h3>
                    <h3> Phone:{b.phone}</h3>
