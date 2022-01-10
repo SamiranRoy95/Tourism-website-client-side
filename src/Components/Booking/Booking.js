@@ -6,7 +6,7 @@ const [booking,setBooking]=useState([])
 const {user}=UseContext();
 
 useEffect(()=>{
-    fetch(`https://fathomless-forest-96543.herokuapp.com/myorders?name=${user.email}`)
+    fetch(`https://fathomless-forest-96543.herokuapp.com/myorders?email=${user.email}`)
     .then(res=>res.json())
     .then(data=>{
         console.log(data)
