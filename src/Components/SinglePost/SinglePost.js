@@ -14,7 +14,7 @@ const SinglePost = () => {
     
     const { singlepostid } = useParams()
     useEffect(() => {
-        fetch("https://fathomless-forest-96543.herokuapp.com/homeservice")
+        fetch("http://aqueous-savannah-68908.herokuapp.com/homeservice")
             .then(res => res.json())
             .then(data => {
                
@@ -38,7 +38,7 @@ const SinglePost = () => {
         const opinion=opinionRef.current.value;
         const newBooking={name,addres,phone,opinion}
 
-        fetch("https://fathomless-forest-96543.herokuapp.com/myorders",{
+        fetch("http://aqueous-savannah-68908.herokuapp.com/myorders",{
             method:"POST",
             headers:{
                 "content-type":"application/json"

@@ -8,7 +8,7 @@ const {user}=UseContext();
 const history=useHistory();
 
 useEffect(()=>{
-    fetch(`https://fathomless-forest-96543.herokuapp.com/myorders?email=${user.email}`,{
+    fetch(`http://aqueous-savannah-68908.herokuapp.com/myorders?email=${user.email}`,{
 
     headers:{
         "authorization":` Bearer ${localStorage.getItem("idToken")}`
@@ -37,7 +37,7 @@ history.push("/login")
     
     },[])
     const handleDeleteUser=id=>{
-        fetch(`https://fathomless-forest-96543.herokuapp.com/myorders${id}`,{
+        fetch(`http://aqueous-savannah-68908.herokuapp.com/myorders${id}`,{
             method:"DELETE"
             
         })

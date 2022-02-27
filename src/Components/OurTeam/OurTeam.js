@@ -5,7 +5,7 @@ const OurTeam = () => {
     const [team, setTeam] = useState([])
     useEffect(() => {
 
-        const url = "https://fathomless-forest-96543.herokuapp.com/team"
+        const url = "http://aqueous-savannah-68908.herokuapp.com/team"
         fetch(url)
             .then(res => res.json())
             .then(data => {

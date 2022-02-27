@@ -6,7 +6,7 @@ const Details = () => {
     const {id}=useParams()
 
     useEffect(() => {
-        fetch(`https://fathomless-forest-96543.herokuapp.com/addnewservice/${id}`)
+        fetch(`http://aqueous-savannah-68908.herokuapp.com/addnewservice/${id}`)
             .then(res => res.json())
             .then(data => {
                 // console.log(data)

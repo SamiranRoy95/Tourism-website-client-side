@@ -6,7 +6,7 @@ const NewServiceAdd = () => {
     const [addservice, setAddservice] =useState([])
     useEffect(()=>{
 
-        fetch("https://fathomless-forest-96543.herokuapp.com/addnewservice")
+        fetch("http://aqueous-savannah-68908.herokuapp.com/addnewservice")
         .then(res=>res.json())
         .then(data=>{
             console.log(data)
@@ -28,7 +28,7 @@ const NewServiceAdd = () => {
         const description = descriptionRef.current.value;
         const newBooking = { place, price, image, description }
 
-        fetch("https://fathomless-forest-96543.herokuapp.com/addnewservice", {
+        fetch("http://aqueous-savannah-68908.herokuapp.com/addnewservice", {
             method: "POST",
             headers: {
                 "content-type": "application/json"
