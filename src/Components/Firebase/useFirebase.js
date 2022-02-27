@@ -38,8 +38,8 @@ const useFirebase = () => {
         onAuthStateChanged(auth, user => {
             if (user) {
                getIdToken(user)
-               .then(idToken=>console.log(idToken))
-               .then(idToken=>localStorage.setItem("idToken",idToken))
+            //    .then(idToken=>console.log(idToken))
+            //    .then(idToken=>localStorage.setItem("idToken",idToken))
                 
                 setUser(user);
             } else {
