@@ -2,7 +2,7 @@
 
 
 
-import {getIdToken, signInWithEmailAndPassword, createUserWithEmailAndPassword, getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged } from "firebase/auth";
+import { signInWithEmailAndPassword, createUserWithEmailAndPassword, getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged } from "firebase/auth";
 
 import { useState, useEffect } from "react";
 import FirebaseInit from "./FirebaseInit";
@@ -37,7 +37,7 @@ const useFirebase = () => {
     useEffect(() => {
         onAuthStateChanged(auth, user => {
             if (user) {
-               getIdToken(user)
+            //    getIdToken(user)
             //    .then(idToken=>console.log(idToken))
             //    .then(idToken=>localStorage.setItem("idToken",idToken))
                 

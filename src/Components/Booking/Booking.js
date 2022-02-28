@@ -8,22 +8,11 @@ const {user}=UseContext();
 const history=useHistory();
 
 useEffect(()=>{
-    fetch(`http://aqueous-savannah-68908.herokuapp.com/myorders?email=${user.email}`,{
+    fetch(`http://aqueous-savannah-68908.herokuapp.com/myorders?email=${user.email}`)
+    
+    
+   
 
-    headers:{
-        "authorization":` Bearer ${localStorage.getItem("idToken")}`
-    }
-    })
-.then(res=>{
-
-   if(res.status===200){
-return res.json();
-
-
-   }else if(res.status===401){
-history.push("/login")
-   }
-})
    
     
     
