@@ -26,7 +26,7 @@ const Home = () => {
 
     useEffect(() => {
 
-        fetch("http://aqueous-savannah-68908.herokuapp.com/addnewservice")
+        fetch("https://aqueous-savannah-68908.herokuapp.com/addnewservice")
             .then(res => res.json())
             .then(data => {
                 console.log(data)

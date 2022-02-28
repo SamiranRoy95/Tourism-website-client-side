@@ -38,7 +38,7 @@ const SinglePost = () => {
         const opinion=opinionRef.current.value;
         const newBooking={name,addres,phone,opinion}
 
-        fetch("http://aqueous-savannah-68908.herokuapp.com/myorders",{
+        fetch("https://aqueous-savannah-68908.herokuapp.com/myorders",{
             method:"POST",
             headers:{
                 "content-type":"application/json"

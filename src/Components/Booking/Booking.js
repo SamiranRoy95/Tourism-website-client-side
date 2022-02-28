@@ -8,7 +8,7 @@ const {user}=UseContext();
 const history=useHistory();
 
 useEffect(()=>{
-    fetch(`http://aqueous-savannah-68908.herokuapp.com/myorders?email=${user.email}`)
+    fetch(`https://aqueous-savannah-68908.herokuapp.com/myorders?email=${user.email}`)
     
     
    
@@ -26,7 +26,7 @@ useEffect(()=>{
     
     },[])
     const handleDeleteUser=id=>{
-        fetch(`http://aqueous-savannah-68908.herokuapp.com/myorders${id}`,{
+        fetch(`https://aqueous-savannah-68908.herokuapp.com/myorders${id}`,{
             method:"DELETE"
             
         })
