@@ -15,7 +15,7 @@ const Home = () => {
 
     useEffect(() => {
 
-        fetch("http://aqueous-savannah-68908.herokuapp.com/homeservice")
+        fetch("https://aqueous-savannah-68908.herokuapp.com/homeservice")
             .then(res => res.json())
             .then(data => {
                 setServices(data)
