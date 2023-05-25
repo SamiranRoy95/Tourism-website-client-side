@@ -13,7 +13,7 @@ const SinglePost = () => {
     const { singlepostid } = useParams()
 
     useEffect(() => {
-        fetch("http://aqueous-savannah-68908.herokuapp.com/homeservice")
+        fetch("https://tourism-server-side-website.onrender.com/homeservice")
             .then(res => res.json())
             .then(data => {
 
@@ -37,7 +37,7 @@ const SinglePost = () => {
         const opinion = opinionRef.current.value;
         const newBooking = { name, addres, phone, opinion }
 
-        fetch("https://aqueous-savannah-68908.herokuapp.com/myorders", {
+        fetch("https://tourism-server-side-website.onrender.com/myorders", {
             method: "POST",
             headers: {
                 "content-type": "application/json"

@@ -6,7 +6,7 @@ const NewServiceAdd = () => {
     const [addservice, setAddservice] = useState([])
     useEffect(() => {
 
-        fetch("https://aqueous-savannah-68908.herokuapp.com/addnewservice")
+        fetch("https://tourism-server-side-website.onrender.com/addnewservice")
             .then(res => res.json())
             .then(data => {
                 console.log(data)
@@ -29,7 +29,7 @@ const NewServiceAdd = () => {
         const description = descriptionRef.current.value;
         const newBooking = { place, price, image, description }
 
-        fetch("https://aqueous-savannah-68908.herokuapp.com/addnewservice", {
+        fetch("https://tourism-server-side-website.onrender.com/addnewservice", {
             method: "POST",
             headers: {
                 "content-type": "application/json"

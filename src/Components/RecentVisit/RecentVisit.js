@@ -7,7 +7,7 @@ const RecentVisit = () => {
     const [data,setData]=useState([])
 
     useEffect(()=>{
-const url="https://aqueous-savannah-68908.herokuapp.com/recentvisit"
+const url="https://tourism-server-side-website.onrender.com/recentvisit"
 fetch(url)
 .then(res=>res.json())
 .then(data=>{

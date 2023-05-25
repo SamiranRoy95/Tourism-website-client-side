@@ -8,7 +8,7 @@ const {user}=UseContext();
 const history=useHistory();
 
 useEffect(()=>{
-    fetch(`https://aqueous-savannah-68908.herokuapp.com/myorders?email=${user.email}`)
+    fetch(`https://tourism-server-side-website.onrender.com/myorders?email=${user.email}`)
 
     
     
@@ -22,7 +22,7 @@ useEffect(()=>{
     
     },[])
     const handleDeleteUser=id=>{
-        fetch(`https://aqueous-savannah-68908.herokuapp.com/myorders${id}`,{
+        fetch(`https://tourism-server-side-website.onrender.com/myorders${id}`,{
             method:"DELETE"
             
         })
