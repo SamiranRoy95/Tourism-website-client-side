@@ -1,61 +1,60 @@
-import React, { useState, useEffect , useRef} from 'react'
+ import React, { useState, useEffect, useRef } from 'react'
 import { useParams } from 'react-router'
 
 import "./SinglePost.css"
 
 const SinglePost = () => {
-    const nameRef=useRef()
-    const addresRef=useRef()
-    const phoneRef=useRef()
-    const opinionRef=useRef()
+    const nameRef = useRef()
+    const addresRef = useRef()
+    const phoneRef = useRef()
+    const opinionRef = useRef()
 
     const [post, setPost] = useState({})
-    
-    
     const { singlepostid } = useParams()
+
     useEffect(() => {
         fetch("http://aqueous-savannah-68908.herokuapp.com/homeservice")
             .then(res => res.json())
             .then(data => {
-               
+
                 const singleData = data.find(post => post._id == singlepostid)
                 setPost(singleData)
             })
 
-    },[])
+    }, [])
 
 
 
 
 
-    
 
-    const handleAdd=(e)=>{
+
+    const handleAdd = (e) => {
         e.preventDefault();
-        const name=nameRef.current.value;
-        const addres=addresRef.current.value;
-        const phone=phoneRef.current.value;
-        const opinion=opinionRef.current.value;
-        const newBooking={name,addres,phone,opinion}
+        const name = nameRef.current.value;
+        const addres = addresRef.current.value;
+        const phone = phoneRef.current.value;
+        const opinion = opinionRef.current.value;
+        const newBooking = { name, addres, phone, opinion }
 
-        fetch("https://aqueous-savannah-68908.herokuapp.com/myorders",{
-            method:"POST",
-            headers:{
-                "content-type":"application/json"
+        fetch("https://aqueous-savannah-68908.herokuapp.com/myorders", {
+            method: "POST",
+            headers: {
+                "content-type": "application/json"
             },
-            body:JSON.stringify(newBooking)
+            body: JSON.stringify(newBooking)
         })
-        .then(res=>res.json())
-        .then(data=>{
-            if(data.insertedId){
-                alert("successfully post")
-                e.target.reset()
-            }
-        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.insertedId) {
+                    alert("successfully post")
+                    e.target.reset()
+                }
+            })
 
 
     }
-    
+
     return (
         <div className='single__post_com'>
 
@@ -68,7 +67,7 @@ const SinglePost = () => {
                 <h3>{post.price}</h3>
                 <p>{post.description}</p>
             </div>
-            
+
 
             <div className='sidebar__for__booking'>
                 <h2 className='order__title'>Please Book Now</h2>

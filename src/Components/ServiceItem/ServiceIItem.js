@@ -1,13 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import "./serviceItem.css"
+import "./serviceItem.css";
 
 const ServiceIItem = (props) => {
     const {_id, image, description, place, price } = props.service;
     return (
         <div>
-            
-
             <div className='service__item'>
                 <img className='service__img' src={image} alt='' />
                 <p> Place:{place}</p>

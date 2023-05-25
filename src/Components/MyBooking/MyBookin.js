@@ -14,6 +14,13 @@ fetch("https://aqueous-savannah-68908.herokuapp.com/myorders")
 })
 
 
+
+
+
+
+
+
+
 },[])
 
 const handleDeleteUser=id=>{
@@ -39,7 +46,9 @@ const handleDeleteUser=id=>{
             <h2 className='mybooking__title'> My  Booking</h2>
             <div className='my__booking'>
             {
-                booking.map(b=><div className='single__booking'>
+                booking.map(b=>
+                <div key={b.id} className='single__booking'>
+
                    <h3>Name:{b.name}</h3>
                    <h3>Addres:{b.addres}</h3>
                    <h3> Phone:{b.phone}</h3>

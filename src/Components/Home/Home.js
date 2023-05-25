@@ -15,7 +15,7 @@ const Home = () => {
 
     useEffect(() => {
 
-        fetch("https://aqueous-savannah-68908.herokuapp.com/homeservice")
+        fetch("https://tourism-server-side-website.onrender.com/homeservice")
             .then(res => res.json())
             .then(data => {
                 setServices(data)
@@ -26,7 +26,7 @@ const Home = () => {
 
     useEffect(() => {
 
-        fetch("https://aqueous-savannah-68908.herokuapp.com/addnewservice")
+        fetch("https://tourism-server-side-website.onrender.com/addnewservice")
             .then(res => res.json())
             .then(data => {
                 console.log(data)
@@ -50,10 +50,9 @@ const Home = () => {
             <h2 className='our__service__title'>Our Service</h2>
             <div className='services__wrapper' >
                 {
-                    services.map(service => <ServiceIItem
-                        service={service}
-
-                    />)
+                    services.map(service => 
+                    <ServiceIItem service={service} />
+                    )
                 }
 
                 {/* This is dynamically add service*/}

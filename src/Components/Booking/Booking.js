@@ -9,14 +9,10 @@ const history=useHistory();
 
 useEffect(()=>{
     fetch(`https://aqueous-savannah-68908.herokuapp.com/myorders?email=${user.email}`)
-    
-    
-   
 
-   
     
     
-    
+.then(res=>res.json())
     .then(data=>{
         console.log(data)
        
@@ -32,6 +28,7 @@ useEffect(()=>{
         })
         .then(res=>res.json())
         .then(data=>{
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
         if(data.deletedCount>0){
             alert("succesfully delete")
             const remainingBooking=orders.filter(b=>b._id!==id)
@@ -41,6 +38,15 @@ useEffect(()=>{
         })
         
     }
+
+    
+
+
+
+
+    
+
+
     
     return (
         <div>
@@ -66,7 +72,7 @@ useEffect(()=>{
                    )
             }
             </div>
-            
+
         </div>
 
             
