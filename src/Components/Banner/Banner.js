@@ -4,9 +4,7 @@ import "../Banner/Banner.css"
 const Banner = () => {
     return (
         <div className='banner__section'>
-            <img className='banner__logo' alt='' 
-            
-            src="https://media-eng.dhakatribune.com/uploads/2021/09/tourism-spot-bd-1632670974870.jpg"/>
+            <img className='banner__logo' src="https://static.toiimg.com/thumb/msid-80786117,width-748,height-499,resizemode=4,imgsize-272533/.jpg"/>
 
 
             
